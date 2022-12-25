@@ -1,0 +1,17 @@
+{% extends 'base/template.html' %}
+{% load static %}
+{% block content %}
+
+<div id="box">
+    <img id="success-icon" src="{% static 'images/check.png' %}" alt="">
+    <h4>Thank you for your contribution ${{amount}}</h4>
+    <p>Your support helps me fullfill my dream of
+        teaching aspiring developers around the world!
+        You should receive a reciept to the email you 
+        provided shortly :)
+    </p>
+    <hr>
+    <a href="{% url 'index' %}" class="myButton">&#x2190; Back to donation page</a>
+
+</div>
+{% endblock content %}

@@ -2,6 +2,10 @@ from django.shortcuts import render, redirect
 from django.urls import reverse
 from django.http import JsonResponse
 
+import stripe
+
+stripe.api_key = "sk_test_51MJKXfC7xQ1zzbZ2Ipa85JLt0lpCbY2mWIqyy8tx9P9GtqLkj0HIMsK1efLUNhnM5Jjd3yqUu4YGMwLUSNKE8jEV005E6BTePM"
+
 # Create your views here.
 
 def index(request):
